@@ -49,7 +49,7 @@ Instala a última versão da Engine do Docker:
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
 
-Verifica esta Engine do Docker:
+Verifica a Engine do Docker:
 
 ```
 sudo docker run hello-world
