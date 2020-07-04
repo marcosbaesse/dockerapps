@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  redis:
+    image: redis
+    ports:
+        - 6379:6379
+    networks:
+      - redis
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    restart: unless-stopped
+    environment:
+        - REDIS_HOSTS=redis
+    ports:
+        - 8081:8081
+    networks:
+      - redis
+
+networks:
+  redis:
+    driver: bridge
