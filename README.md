@@ -1,5 +1,5 @@
-# dockerizing-examples
-A repository with examples applications dockerizations using docker-compose
+# Dockerapps
+Docker-compose files to setup services/apps like database, redis, rabbtimq and more.
 
 # Installing Docker
 
